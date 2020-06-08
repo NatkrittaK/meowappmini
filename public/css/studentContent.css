@@ -1,0 +1,34 @@
+.stdcontainer{
+    height: 100vh;
+    width: 100vw;
+    /*margin :2rem auto;*/
+    display: grid;
+    grid-template-areas: "header header header" 
+                        "bar stdcontent stdcontent "
+                        "footer footer footer ";
+                        grid-template-rows: 60px 750px 1fr;
+                        grid-template-columns: auto 1fr auto;
+    
+    }
+.headstd  {
+    list-style: none;
+    background-color:#444 ;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    height: 60px;
+    grid-area: header;
+
+}
+
+.sidebar{
+    background: pink;
+    grid-area: bar;
+    width: 450px;
+
+
+}
+.stdmain{
+    background: #2196F3;
+    grid-area: stdcontent;   
+}

@@ -1,0 +1,43 @@
+.container{
+height: 100vh;
+width: 100vw;
+/*margin :2rem auto;*/
+display: grid;
+grid-template-areas: "header header header" "left main right" "footer footer footer";
+grid-template-rows: 60px 5fr 1fr;
+grid-template-columns: auto 1fr 1fr;
+
+}
+.cell-1{
+    background: blanchedalmond;
+    grid-area: header;
+}
+.headhead{
+    background: #444;
+    grid-area: header;
+    text-align : right;
+
+}
+.cell-2{
+    background: grey;
+    grid-area: left;
+    padding: 120px 2px;
+}
+.cell-3{
+    background: gold;
+    grid-area: main;
+}
+.cell-4{
+    background: palevioletred;
+    grid-area: right;
+}
+.cell-5{
+    background: blueviolet;
+    grid-area: footer;
+}
+.cell{
+    color: aliceblue;
+   font-size: 2.5rem;
+    text-align : center;
+   /* padding : 4 rem;*/
+}
